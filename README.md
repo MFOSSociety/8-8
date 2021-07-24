@@ -15,6 +15,7 @@ The 8x8 matrix of the board can house any of the 32 pieces. We needed a mechanis
 
 <p align="center">
 	<img src="hardware/images/XY-Mecha.jpg"/>
+	<br>
 	<i>XY Table - Top View</i>
 </p>
 
@@ -24,6 +25,7 @@ We decided to move the chess pieces with the electromagnetic head. Each chess pi
 
 <p align="center">
 	<img src="hardware/images/ELE-Mount.jpg"/>
+	<br>
 	<i>Electromagnet Mounting on XY Table</i>
 </p>
 
@@ -31,15 +33,9 @@ We decided to move the chess pieces with the electromagnetic head. Each chess pi
 
 We used two Nema-17 Motors. We tried a lot of motor drivers but, none of the motor driver were reliable, we either burnt the driver or didn't recieve a good one. So we decided to use L298n instead. Using the H-bridge we wrote a simple code to rotate the motor and after a few tests we concluded that five complete rotations of the motor were equal to the movement of one square of the board.
 
-<p align="center">
-	<img src="hardware/images/XAxis-Motor.jpg"/>
-	<i>X Axis Motor</i>
-</p>
-
-<p align="center">
-	<img src="hardware/images/YAxis-Motor.jpg"/>
-	<i>Y Axis Motor</i>
-</p>
+X Axis Motor               |  Y Axis Motor
+:-------------------------:|:-------------------------:
+![](hardware/images/XAxis-Motor.jpg)  |  ![](hardware/images/YAxis-Motor.jpg)
 
 ## Parts List
 
