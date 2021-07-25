@@ -1,5 +1,5 @@
 import re
-from Pawn import Pawn
+from .Board import Pawn
 
 
 class InputParser:

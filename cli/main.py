@@ -1,10 +1,13 @@
-from Board import Board
-from InputParser import InputParser
-from AI import AI
+from utils.Board import Board
+from utils.InputParser import InputParser
+from utils.Engine import ChessEngine
 import sys
 import random
 import RPi.GPIO as GPIO
-from moveMotor import moveMotor
+
+import sys
+sys.path.append("..") # Add higher directory to python modules path
+from drivers.moveMotor import moveMotor
 
 WHITE = True
 BLACK = False
@@ -187,7 +190,7 @@ try:
         playerSide = askForPlayerSide()
         print()
         aiDepth = askForDepthOfAI()
-        opponentAI = AI(board, not playerSide, aiDepth)
+        opponentAI = ChessEngine(board, not playerSide, aiDepth)
         startGame(board, playerSide, opponentAI)
 except KeyboardInterrupt:
     GPIO.cleanup()

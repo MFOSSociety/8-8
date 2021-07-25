@@ -1,6 +1,6 @@
-from motor1 import rotatemotor as rotateY
-from motor2 import rotatemotor as rotateX
-from em import toggleMagnet as toggleMagnet
+from .motor1 import rotatemotor as rotateY
+from .motor2 import rotatemotor as rotateX
+from .ElectroMagnet import toggleMagnet
 import time
 
 motorcurentx = 0

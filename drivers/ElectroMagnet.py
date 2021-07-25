@@ -4,6 +4,7 @@ import time
 out1=16
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(out1,GPIO.OUT)
+
 def toggleMagnet(state):
         if state:
             print("on")

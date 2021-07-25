@@ -14,10 +14,24 @@ The **8/8** aims to move the pieces in resemblance to the movie Harry Potter. We
 The 8x8 matrix of the board can house any of the 32 pieces. We needed a mechanism which will let the piece move at any given point on the board. After a lot of thought we decided that the movement, we wish to make is very similar to the motion a 3D printer makes while printing so we decided to dive in deeper into 3D printer axes (plotters) internal workings. After reading a ton, we decided that we will use two lead screw mechanism to make movements in the XY direction one on top of the lead screws that would be the intersection point of the lead screws will be the electromagnet which will make the pieces move.
 
 <p align="center">
-	<img src="hardware/images/XY-Mecha.jpg"/>
+	<img src="hardware/images/chessboard-xy-frame-schematic.jpg"/>
 	<br>
-	<i>XY Table - Top View</i>
+	<i>Chessboard XY Frame Schematics</i>
 </p>
+
+**Ø M** = Stepper Motor
+
+**Ø TR** = Threaded Rod
+
+**Ø S** = Slide
+
+**Ø R** = Rod
+
+**Ø C** = Catch Accessory
+
+**Ø B** = Ball Bearing
+
+**Ø EM** = Electromagnet
 
 ### Electromagnetic Clamp Head
 

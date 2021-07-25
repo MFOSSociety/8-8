@@ -1,7 +1,10 @@
-from motor1 import rotatemotor as rotateY
-from motor2 import rotatemotor as rotateX
-from em import toggleMagnet as toggleMagnet
 import time
+import sys
+sys.path.append("..") # Add higher directory to python modules path
+from drivers.motor1 import rotatemotor as rotateY
+from drivers.motor2 import rotatemotor as rotateX
+from drivers.ElectroMagnet import toggleMagnet
+
 
 motorcurentx = 0
 motorcurenty = 0
