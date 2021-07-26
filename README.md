@@ -7,6 +7,19 @@ As my minor project for my Computer Engineering course I and my teammate, Piyush
 
 The **8/8** aims to move the pieces in resemblance to the movie Harry Potter. We wanted to build an affordable but fully functional project. While not having fancy way of killing pieces, but still, a cool project nevertheless.
 
+
+## Installation
+
+```bash
+chmod +x build/tools/install.sh
+bash build/tools/install.sh
+python3 cli/main.py
+# optionally
+python3 cli/manual.py # moves the motor manually, giving it inital and final coordinates
+python3 drivers/ElectroMagnet.py # let's you control the electromagnet
+```
+
+
 ## Hardware Design Notes
 
 ### Core XY Motion
